@@ -1,0 +1,7 @@
+<div *ngIf="category">
+  <h2>{{category.name | uppercase}} Details</h2>
+  <div>Name:
+    <input [(ngModel)]="category.name" placeholder="name">
+  </div>
+</div>
+<button (click)="goBack()">Back</button>

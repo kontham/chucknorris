@@ -1,0 +1,8 @@
+<h2>Categories</h2>
+<ul class="categories">
+  <li *ngFor="let category of categories">
+    <a routerLink="/detail/{{category.name}}">
+    <span class="badge" >{{category.name}}</span>
+    </a>
+  </li>
+</ul>

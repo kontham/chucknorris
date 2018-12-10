@@ -1,0 +1,10 @@
+<h3>First few Categories</h3>
+
+<div class="grid grid-pad">
+  <a *ngFor="let category of categories" class="col-1-4"
+  routerLink="/detail/{{category.name}}">
+    <div class="module hero">
+      <h4>{{category.name}}</h4>
+    </div>
+  </a>
+</div>
